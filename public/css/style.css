@@ -1,0 +1,129 @@
+/* Minimal professional theme */
+:root {
+    --brand-primary: #0d6efd;  /* Bootstrap primary */
+    --brand-secondary: #6c757d;
+    --brand-danger: #dc3545;
+    --text-color: #1f2937;     /* gray-800 */
+    --muted-color: #6b7280;    /* gray-500 */
+    --border-color: #e5e7eb;   /* gray-200 */
+    --bg-soft: #f8fafc;        /* gray-50 */
+}
+
+body {
+    color: var(--text-color);
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.brand-logo {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.table thead th {
+    background: #fff !important;
+    border-bottom: 1px solid var(--border-color) !important;
+}
+
+.table tbody tr + tr {
+    border-top: 1px solid var(--border-color);
+}
+
+.btn-outline-primary {
+    color: var(--brand-primary);
+    border-color: var(--brand-primary);
+}
+.btn-outline-primary:hover {
+    background: var(--brand-primary);
+    color: #fff;
+}
+
+.btn-outline-secondary {
+    color: var(--brand-secondary);
+    border-color: var(--brand-secondary);
+}
+.btn-outline-secondary:hover {
+    background: var(--brand-secondary);
+    color: #fff;
+}
+
+.btn-outline-danger {
+    color: var(--brand-danger);
+    border-color: var(--brand-danger);
+}
+.btn-outline-danger:hover {
+    background: var(--brand-danger);
+    color: #fff;
+}
+
+.card,
+.table-responsive {
+    border: 1px solid var(--border-color);
+}
+
+h1,h2,h3,h4,h5 {
+    color: var(--text-color);
+}
+
+/* Gallery uniform sizing */
+#gallery .gallery-item {
+    position: relative;
+    width: 100%;
+    height: 300px; /* uniform height */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Event cards */
+.event-card-img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.event-meta {
+    color: var(--muted-color);
+    font-size: 0.9rem;
+}
+
+/* Create/Edit form enhancements */
+.card-header-gradient {
+    background: linear-gradient(135deg, #0d6efd 0%, #4e9af1 100%);
+    color: #fff;
+}
+
+.form-section-title {
+    font-size: 0.95rem;
+    color: var(--muted-color);
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    margin-bottom: .5rem;
+}
+
+.help-text {
+    color: var(--muted-color);
+    font-size: .85rem;
+}
+
+.preview-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 1px dashed var(--border-color);
+    border-radius: .5rem;
+}
+
+#gallery .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* crop to fill */
+    display: block;
+}
+
+#gallery .gallery-item + p,
+#gallery .gallery-item ~ p {
+    margin-top: 8px;
+}
